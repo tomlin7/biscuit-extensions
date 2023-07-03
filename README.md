@@ -1,2 +1,2 @@
 # biscuit-extensions
-biscuit extensions repository
+SEE ISSUE: [#56 Biscuit Extensions Repository (WIP)]( https://github.com/billyeatcookies/Biscuit/issues/56)
