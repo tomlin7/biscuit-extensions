@@ -1,6 +1,6 @@
 # Sample extensions demonstrating the process
-sample="extensions/sample.py"
-sample2="extensions/sample2.py"
+sample="sample.py"
+sample2="sample2.py"
 
 
 #TODO add author, description
