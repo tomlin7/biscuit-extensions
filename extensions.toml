@@ -1,6 +1,3 @@
 # Sample extensions demonstrating the process
 sample="sample.py"
-sample2="sample2.py"
-
-
-#TODO add author, description
+snake="snake.py"
