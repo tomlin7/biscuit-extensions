@@ -1,7 +1,13 @@
-# Biscuit Extensions Repository (WIP)
-The Biscuit Extensions Repository is currently in progress and actively being developed. Although the Extensions API is not yet fully documented, efforts are underway to provide comprehensive documentation for extension developers.
+# Biscuit Extensions Repository
+The Biscuit Extensions Repository stores the extensions for the [Biscuit Code Editor](https://github.com/billyeatcookies/Biscuit) and currently is a work in progress and actively being developed.
 
-For the latest information and updates on the progress of the repository, please refer to the related issue: [#56 Biscuit Extensions Repository (WIP)]( https://github.com/billyeatcookies/Biscuit/issues/56).
+## Contributing your Extension
+You can contribute the awesome extensions you've made for Biscuit here, I'm happy to see what all amazing ideas yall bring up! Follow these steps:
 
-> **Note**
-> To contribute to the Biscuit project, visit the [Biscuit GitHub repository](https://github.com/billyeatcookies/Biscuit). Your contributions and support are greatly appreciated! 🧡
+1. Add your extension's script to   `extensions/` directory
+2. Add your extension to `extensions.toml` and the process is complete
+
+## About
+To contribute to the Biscuit project, visit the [Biscuit GitHub repository](https://github.com/billyeatcookies/Biscuit).
+
+For the latest information and updates on the extensions repository and API, please refer to the issue: [#56 Biscuit Extensions Repository]( https://github.com/billyeatcookies/Biscuit/issues/56).
