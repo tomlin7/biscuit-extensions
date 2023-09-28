@@ -1,4 +1,7 @@
-# Sample extensions demonstrating the process
-sample="sample.py"
-monkey="monkey.py"
-typo="typo.py"
+# Extensions Repository - use the following format
+# ------------------------------------------------
+# <extension name> = ["file.py", "author", "description"]
+sample=["sample.py", "billyeatcookies", "Hello world, sample extension"]
+
+typo=["typo.py", "Do typing tests inside biscuit!"]
+monkey=["monkey.py", "ltaoist", "Support for Monkey projects"]
