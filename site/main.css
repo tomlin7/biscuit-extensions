@@ -1,0 +1,24 @@
+.item-row {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    margin: 10px;
+    box-sizing: border-box;
+    background: transparent;
+    color: #622E12;
+    font-family: system-ui;
+    font-weight: 400;
+    outline: none;
+}
+
+::placeholder {
+    color: #8E5A2A;
+    opacity: 1;
+}
