@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0px auto 0px auto;
+  padding: 0px 40px;
+}
+@media (min-width: 1200px) and (max-width: 1441px) {
+  .container {
+    max-width: 1250px;
+    padding: 0px 36px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0px 30px;
+  }
+}
+@media (max-width: 479px) {
+  .container {
+    padding: 0px 30px 0px 20px;
+  }
+}
+
+.box {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+  transition: all 0.3s ease-in;
+}
+.box .emote {
+  transition: all 0.3s ease-in-out 0.1s;
+}
+.box .title {
+  transition: all 0.3s ease-in-out;
+}
+.box:hover {
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.2) 10px 10px 10px;
+}
+.box:hover .emote {
+  transform: scale(2) translateY(-25px);
+}
+.box:hover .title {
+  letter-spacing: 2px;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -2,6 +2,9 @@
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.box {
+    margin:10px;
+}
 
 #searchInput {
     width: 100%;
@@ -22,3 +25,5 @@
     color: #8E5A2A;
     opacity: 1;
 }
+
+

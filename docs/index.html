@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
   <link rel="json" >
   <title>Biscuit Extensions Marketplace</title>
 </head>
 <body style="display: flex; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center; background: #7E3F1C; border: 0; padding: 0%; margin: 0%;">
-
-  <div style="display: flex; width: 100%; height: 242px; background: #6C3515; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center;">
+  <div style="margin-bottom:20px; display: flex; width: 100%; height: 242px; background: #6C3515; flex-wrap: wrap; align-items: center; align-content: center; justify-content: center;">
     <div style="width: 100%; height: 70px; text-align: center; color: #A4652C; font-size: 67px; font-family: system-ui; font-weight: 900; word-wrap: break-word">BISCUIT EXTENSIONS</div>
     <div style="display: flex; width: 577px; height: 67px; background: #BB7C42; border-radius: 32px; margin-top: 30px; flex-wrap: wrap; align-content: space-around; justify-content: flex-start;">
       <input type="text" id="searchInput" placeholder="Search extensions...">
@@ -21,13 +21,19 @@
   </div>
 
   <script>
+    Array.prototype.random = function () {
+      return this[Math.floor((Math.random()*this.length))];
+    }
+
     fetch('https://raw.githubusercontent.com/billyeatcookies/biscuit-extensions/main/extensions.json')
       .then(response => response.json())
       .then(jsonData => {
-        function createItem(data) {
+        function createItem(key, data) {
           return `
-            <div class="item" style="padding: 30px; display: flex; align-items: flex-start; height: 180px; background: #A4652C; border-radius: 20px; flex-direction: column; justify-content: flex-end; align-content: flex-start; flex-wrap: wrap; padding-left: 20px; padding-bottom: 20px;">
-              <div style="color: #60340C; font-size: 32px; font-family: system-ui; font-weight: 900; word-wrap: break-word">${data[0]}</div>
+            <div class="box" style="padding: 30px; display: flex; align-items: flex-start; height: 200px; background: #A4652C; border-radius: 20px; flex-direction: column; justify-content: flex-end; align-content: flex-start; flex-wrap: wrap; padding-left: 20px; padding-bottom: 20px;">
+              <div class="emote" style="font-size:40px;">${["🍕","🍟","🍿","🧀","🍞","✨","🎀","🎄","🎈","🎨","🕶"].random()}</div>
+              <div class="title" style="color: #60340C; font-size: 32px; font-family: system-ui; font-weight: 900; word-wrap: break-word">${key.toUpperCase()}</div>
+              <div style="color: #622E12; font-size: 16px; font-family: system-ui; font-weight: 500; word-wrap: break-word">${data[1]}</div>
               <div style="color: #7E3F1C; font-size: 16px; font-family: system-ui; font-weight: 500; word-wrap: break-word">${data[2]}</div>
             </div>
           `;
@@ -37,7 +43,7 @@
 
         for (const key in jsonData) {
           const itemData = jsonData[key];
-          const itemHtml = createItem(itemData);
+          const itemHtml = createItem(key, itemData);
           container.innerHTML += itemHtml;
         }
       })
