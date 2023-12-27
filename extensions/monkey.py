@@ -12,7 +12,7 @@ class Extension:
         self.resolve_develop_menu()
 
     def resolve_develop_menu(self):
-        self.app = app = self.api.__dict__['_ExtensionsAPI__base']
+        self.app = app = self.api.base
         events = app.events
         menubar = app.root.menubar
         develop_menu = menubar.add_menu("Develop")
