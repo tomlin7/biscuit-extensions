@@ -1,4 +1,5 @@
 {
+    "python":["python.py", "billyeatcookies", "Support for Python projects!"],
     "typo":["typo.py", "billyeatcookies", "Do typing tests inside biscuit!"],
-    "monkey":["monkey.py", "ltaoist", "Support for Monkey projects"]
+    "monkey":["monkey.py", "ltaoist", "Monkey language integration by ltaoist"]
 }
