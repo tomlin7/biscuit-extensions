@@ -11,5 +11,5 @@ class Extension:
                 sp.check_call(['pip', 'install', 'python-lsp-server'])
             except sp.CalledProcessError:
                 self.api.notifications.warning("Python extension requires python-lsp-server to be installed")
-        self.api.register_langserver('python', 'pylsp')
+        self.api.register_langserver('Python', 'pylsp')
         
