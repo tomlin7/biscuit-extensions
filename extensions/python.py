@@ -1,6 +1,24 @@
+from __future__ import annotations
+
+__version__ = '0.0.1'
+__version_info__ = tuple([ int(num) for num in __version__.split('.')])
+
+
 import subprocess as sp
+import typing
+
+if typing.TYPE_CHECKING:
+    from biscuit import ExtensionsAPI
 
 class Extension:
+    """Python extension for Biscuit (author: @billyeatcookies)
+    
+    Extension will automatically install python-lsp-server if not installed.
+    
+    Contributes:
+    - language server configuration for Python (pylsp)
+    """
+    
     def __init__(self, api):
         self.api = api
 
