@@ -3,5 +3,9 @@
     "Black Formatter":["black.py", "billyeatcookies", "Format your code with Black!"],
     "Isort":["isort.py", "billyeatcookies", "Sort your imports with isort!"],
     "Typo":["typo.py", "billyeatcookies", "Do typing tests inside biscuit!"],
-    "Monkey":["monkey.py", "ltaoist", "Monkey language integration by ltaoist"]
+    "Tetris":["tetris.py", "cid0rz", "Play the classic tetris!"],
+    "Snake":["snake.py", "cid0rz", "Play the classic snake!"],
+    "Stack Engineer":["stackengineer.py", "cid0rz", "Help the stack engineer!"],
+    "Monkey":["monkey.py", "ltaoist", "Monkey language integration by ltaoist"],
+    "Moon Lander":["moonlander.py", "cid0rz", "Landing a ship on moon!"]
 }
