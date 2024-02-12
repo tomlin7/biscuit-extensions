@@ -34,7 +34,6 @@ class Extension:
                 sp.check_call(['pip', 'install', 'isort'])
             except sp.CalledProcessError:
                 self.api.notifications.warning("Python extension requires isort to be installed")
-        self.api.register_langserver('Python', 'pylsp')
 
     def format(self, *_) -> str:
         editor = self.api.editorsmanager.active_editor
