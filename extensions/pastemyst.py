@@ -31,7 +31,7 @@ class Extension:
             try:
                 sp.check_call(['pip', 'install', 'pastemyst'])
             except sp.CalledProcessError:
-                self.api.notifications.warning("Python extension requires pypi/pastemyst to be installed")
+                self.api.notifications.warning("PasteMyst extension requires pypi/pastemyst to be installed")
 
     def create_paste(self, *_) -> None:
         """Create a new paste on paste.myst.rs
