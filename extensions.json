@@ -5,6 +5,7 @@
     "Typo":["typo.py", "billyeatcookies", "Do typing tests inside biscuit!"],
     "Tetris":["tetris.py", "cid0rz", "Play the classic tetris!"],
     "PasteMyst":["pastemyst.py", "billyeatcookies", "Share code with pastemyst!"],
+    "pycodestyle":["pycodestyle.py", "billyeatcookies", "Check style for python files"],
     "Snake":["snake.py", "cid0rz", "Play the classic snake!"],
     "Stack Engineer":["stackengineer.py", "cid0rz", "Help the stack engineer!"],
     "Monkey":["monkey.py", "ltaoist", "Monkey language integration by ltaoist"],
