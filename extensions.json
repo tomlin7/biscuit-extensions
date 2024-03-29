@@ -1,5 +1,6 @@
 {
-    "Python":["python.py", "billyeatcookies", "Support for Python projects!"],
+    "Rust":["rust.py", "billyeatcookies", "Rust language extension!"],
+    "TypeScript & JavaScript":["javascript_typescript.py", "billyeatcookies", "Support for JS & TS projects!"],
     "Black Formatter":["black.py", "billyeatcookies", "Format your code with Black!"],
     "Isort":["isort.py", "billyeatcookies", "Sort your imports with isort!"],
     "Typo":["typo.py", "billyeatcookies", "Do typing tests inside biscuit!"],
@@ -8,6 +9,7 @@
     "pycodestyle":["pycodestyle.py", "billyeatcookies", "Check style for python files"],
     "Snake":["snake.py", "cid0rz", "Play the classic snake!"],
     "Stack Engineer":["stackengineer.py", "cid0rz", "Help the stack engineer!"],
+    "Python":["python.py", "billyeatcookies", "Support for Python projects!"],
     "Monkey":["monkey.py", "ltaoist", "Monkey language integration by ltaoist"],
     "Moon Lander":["moonlander.py", "cid0rz", "Landing a ship on moon!"]
 }
