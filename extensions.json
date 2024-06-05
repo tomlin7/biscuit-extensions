@@ -1,5 +1,7 @@
 {
     "Rust":["rust.py", "Billy", "Rust language extension!"],
+    "Pride":["pride.py", "Billy", "Happy pride month!"],
+
     "TypeScript & JavaScript":["javascript_typescript.py", "Billy", "Support for JS & TS projects!"],
     "Black Formatter":["black.py", "Billy", "Format your code with Black!"],
     "Isort":["isort.py", "Billy", "Sort your imports with isort!"],
