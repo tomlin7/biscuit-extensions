@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import threading
@@ -58,7 +58,7 @@ class Clock:
     def change_time_format(self, *_) -> None:
         self.api.base.palette.show("time:")
 
-    def run(self) -> None: ...
+    def install(self) -> None: ...
 
 
 def setup(api: ExtensionsAPI) -> Clock:

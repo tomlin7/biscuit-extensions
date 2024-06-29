@@ -8,7 +8,7 @@ class Moonlander:
     def __init__(self, api):
         self.api = api
 
-    def run(self):
+    def install(self):
         class MoonlanderGame(self.api.Game):
             name = "Moonlander"
 

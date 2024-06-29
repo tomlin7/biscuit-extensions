@@ -15,7 +15,7 @@ class Tetris:
     def __init__(self, api):
         self.api = api
 
-    def run(self):
+    def install(self):
         class TetrisGame(self.api.Game):
             name = "Tetris!"
 
@@ -59,7 +59,7 @@ class Tetris:
                 self.next_piece = Piece(self.preview)
                 self.run()
 
-            def run(self):
+            def install(self):
                 if not self.falling_piece.move(0, 1):
                     self.clear_lines()
                     self.update_status()

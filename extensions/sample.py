@@ -7,7 +7,7 @@
 
 from __future__ import annotations
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import typing
@@ -28,6 +28,8 @@ class DevMode:
     def __init__(self, api: ExtensionsAPI) -> None:
         self.api = api
         self.api.notifications.info(f"Dev mode is enabled!")
+
+    def install(self): ...
 
 
 def setup(api: ExtensionsAPI) -> None:

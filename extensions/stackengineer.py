@@ -83,7 +83,7 @@ class StackEngineer:
         global TextEditor
         TextEditor = self.api.editors.TextEditor
 
-    def run(self):
+    def install(self):
         class StackEngineerGame(self.api.Game):
             name = "Stack Engineer"
 

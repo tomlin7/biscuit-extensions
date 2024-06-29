@@ -18,7 +18,7 @@ class Snake:
         global API
         API = api
 
-    def run(self):
+    def install(self):
         class SnakeGame(self.api.Game):
             name = "Snake!"
 

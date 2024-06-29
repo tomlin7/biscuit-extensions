@@ -23,7 +23,7 @@ class ISort:
         self.api = api
         self.base = api.base
 
-    def run(self) -> None:
+    def install(self) -> None:
         self.check_isort_installation()
         self.api.commands.register_command(
             "Isort: Reorder imports in active editor ", self.format

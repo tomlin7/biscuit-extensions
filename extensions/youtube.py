@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import os
@@ -32,7 +32,7 @@ class YouTube:
                     "VSCode extension requires pypi/webview2 to be installed"
                 )
 
-    def run(self):
+    def install(self):
         class YouTube(self.api.Game):
             name = "YouTube"
 

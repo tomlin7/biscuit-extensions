@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import time
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import threading
@@ -35,7 +35,7 @@ class StatsOnBar:
             time.sleep(1)
             self.btn.change_text(self.sysinfo.get_current_stats())
 
-    def run(self) -> None: ...
+    def install(self) -> None: ...
 
 
 def setup(api: ExtensionsAPI) -> StatsOnBar:

@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import threading
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 
@@ -29,7 +29,7 @@ class Pycodestyle:
         self.problems = self.base.problems
         self.em = self.base.editorsmanager
 
-    def run(self):
+    def install(self):
         reqs = sp.check_output(["pip", "freeze"])
         if not "pycodestyle".encode() in reqs:
             try:

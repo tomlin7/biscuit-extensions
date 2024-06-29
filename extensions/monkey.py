@@ -10,7 +10,7 @@ class Monkey:
     def __init__(self, api):
         self.api = api
 
-    def run(self):
+    def install(self):
         self.resolve_develop_menu()
 
     def resolve_develop_menu(self):

@@ -6,7 +6,7 @@ class Typo:
     def __init__(self, api):
         self.api = api
 
-    def run(self):
+    def install(self):
         class TypoGame(self.api.Game):
             name = "Typo"
 

@@ -13,7 +13,7 @@ class Pride:
     def __init__(self, api):
         self.api = api
 
-    def run(self):
+    def install(self):
         class RainbowFlag(self.api.Game):
             name = "Pride"
 

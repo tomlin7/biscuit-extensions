@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import webbrowser
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import subprocess as sp
@@ -22,7 +22,7 @@ class PasteMyst:
     def __init__(self, api: ExtensionsAPI) -> None:
         self.api = api
 
-    def run(self) -> None:
+    def install(self) -> None:
         self.check_pastemyst_installation()
         self.api.commands.register_command("create paste", self.create_paste)
 

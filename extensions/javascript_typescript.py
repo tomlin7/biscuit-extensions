@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.0.1"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 
@@ -23,7 +23,7 @@ class JS_TS:
     def __init__(self, api: ExtensionsAPI):
         self.api = api
 
-    def run(self):
+    def install(self):
         try:
             sp.Popen(["npm", "install", "-g", "typescript-language-server"], shell=True)
             sp.Popen(["npm", "install", "-g", "typescript"], shell=True)
