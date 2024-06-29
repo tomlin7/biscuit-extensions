@@ -9,7 +9,7 @@ SPEED = 10
 RAINBOW_COLORS = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
 
 
-class Extension:
+class Pride:
     def __init__(self, api):
         self.api = api
 
@@ -61,3 +61,7 @@ class Extension:
                 self.after(50, self.move_bars)
 
         self.api.register_game(RainbowFlag)
+
+
+def setup(api) -> Pride:
+    api.register("pride", Pride(api))

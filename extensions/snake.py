@@ -11,14 +11,15 @@ RAND_POS = WIDTH // DOT_SIZE
 
 API = None
 
-class Extension:
+
+class Snake:
     def __init__(self, api):
         self.api = api
         global API
         API = api
-        
+
     def run(self):
-        class Snake(self.api.Game):
+        class SnakeGame(self.api.Game):
             name = "Snake!"
 
             def __init__(self, *args, **kwargs):
@@ -30,7 +31,9 @@ class Extension:
                 self.body_color = self.base.theme.biscuit_dark
                 self.food_color = self.base.theme.primary_foreground_highlight
 
-                self.canvas = API.utils.Canvas(self, width=WIDTH, height=HEIGHT, **self.base.theme.editors)
+                self.canvas = API.utils.Canvas(
+                    self, width=WIDTH, height=HEIGHT, **self.base.theme.editors
+                )
                 self.canvas.pack(pady=30)
 
                 self.snake_pos = [(100, 50), (90, 50), (80, 50)]
@@ -45,16 +48,54 @@ class Extension:
 
             def create_objects(self):
                 for x, y in self.snake_pos:
-                    self.canvas.create_rectangle(x, y, x + DOT_SIZE, y + DOT_SIZE, fill=self.body_color, tag="snake", outline="")
+                    self.canvas.create_rectangle(
+                        x,
+                        y,
+                        x + DOT_SIZE,
+                        y + DOT_SIZE,
+                        fill=self.body_color,
+                        tag="snake",
+                        outline="",
+                    )
 
-                self.canvas.create_rectangle(*self.snake_pos[0], self.snake_pos[0][0] + DOT_SIZE, self.snake_pos[0][1] + DOT_SIZE, fill=self.head_color, outline="", tag="snake")
-                self.food = self.canvas.create_rectangle(*self.food_pos, self.food_pos[0] + DOT_SIZE, self.food_pos[1] + DOT_SIZE, fill=self.food_color, outline="", tag="food")
+                self.canvas.create_rectangle(
+                    *self.snake_pos[0],
+                    self.snake_pos[0][0] + DOT_SIZE,
+                    self.snake_pos[0][1] + DOT_SIZE,
+                    fill=self.head_color,
+                    outline="",
+                    tag="snake",
+                )
+                self.food = self.canvas.create_rectangle(
+                    *self.food_pos,
+                    self.food_pos[0] + DOT_SIZE,
+                    self.food_pos[1] + DOT_SIZE,
+                    fill=self.food_color,
+                    outline="",
+                    tag="food",
+                )
 
-                self.canvas.create_text(100, 20, text="Score: 0", tag="score", font=("Fixedsys", 20), fill=self.ui)
-                self.game_over_text = self.canvas.create_text(WIDTH / 2, HEIGHT / 2, text="Game Over!", fill=self.ui, font=("Fixedsys", 40), state=tk.HIDDEN)
+                self.canvas.create_text(
+                    100,
+                    20,
+                    text="Score: 0",
+                    tag="score",
+                    font=("Fixedsys", 20),
+                    fill=self.ui,
+                )
+                self.game_over_text = self.canvas.create_text(
+                    WIDTH / 2,
+                    HEIGHT / 2,
+                    text="Game Over!",
+                    fill=self.ui,
+                    font=("Fixedsys", 40),
+                    state=tk.HIDDEN,
+                )
                 restart = API.utils.Button(self.canvas, "Retry!", self.restart_game)
                 restart.config(font=("Fixedsys", 20))
-                self.game_over_btn = self.canvas.create_window(WIDTH / 2, HEIGHT / 2 + 100, window=restart, state=tk.HIDDEN)
+                self.game_over_btn = self.canvas.create_window(
+                    WIDTH / 2, HEIGHT / 2 + 100, window=restart, state=tk.HIDDEN
+                )
 
             def update_game(self):
                 if self.in_game:
@@ -82,9 +123,24 @@ class Extension:
                 self.canvas.delete("snake")
 
                 for x, y in self.snake_pos:
-                    self.canvas.create_rectangle(x, y, x + DOT_SIZE, y + DOT_SIZE, fill=self.body_color, outline=self.bg, tag="snake")
+                    self.canvas.create_rectangle(
+                        x,
+                        y,
+                        x + DOT_SIZE,
+                        y + DOT_SIZE,
+                        fill=self.body_color,
+                        outline=self.bg,
+                        tag="snake",
+                    )
 
-                self.canvas.create_rectangle(*self.snake_pos[0], self.snake_pos[0][0] + DOT_SIZE, self.snake_pos[0][1] + DOT_SIZE, fill=self.head_color, outline=self.bg, tag="snake")
+                self.canvas.create_rectangle(
+                    *self.snake_pos[0],
+                    self.snake_pos[0][0] + DOT_SIZE,
+                    self.snake_pos[0][1] + DOT_SIZE,
+                    fill=self.head_color,
+                    outline=self.bg,
+                    tag="snake",
+                )
 
             def check_collisions(self):
                 head_x, head_y = self.snake_pos[0]
@@ -102,7 +158,12 @@ class Extension:
                 if self.snake_pos[0] == self.food_pos:
                     self.snake_pos.append((0, 0))
                     self.food_pos = self.random_food_pos()
-                    self.canvas.coords(self.food, *self.food_pos, self.food_pos[0] + DOT_SIZE, self.food_pos[1] + DOT_SIZE)
+                    self.canvas.coords(
+                        self.food,
+                        *self.food_pos,
+                        self.food_pos[0] + DOT_SIZE,
+                        self.food_pos[1] + DOT_SIZE,
+                    )
                     self.score += 1
                     self.canvas.itemconfigure("score", text=f"Score: {self.score}")
 
@@ -146,8 +207,20 @@ class Extension:
                 self.canvas.delete("snake")
                 self.canvas.delete(self.food)
                 self.food_pos = self.random_food_pos()
-                self.food = self.canvas.create_rectangle(*self.food_pos, self.food_pos[0] + DOT_SIZE, self.food_pos[1] + DOT_SIZE, fill=self.food_color, outline="", tag="food")
+                self.food = self.canvas.create_rectangle(
+                    *self.food_pos,
+                    self.food_pos[0] + DOT_SIZE,
+                    self.food_pos[1] + DOT_SIZE,
+                    fill=self.food_color,
+                    outline="",
+                    tag="food",
+                )
                 self.create_objects()
                 self.update_game()
 
-        self.api.register_game(Snake)
+        self.api.register_game(SnakeGame)
+
+
+# Register the extension
+def setup(api):
+    api.register("snake", Snake(api))

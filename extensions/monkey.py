@@ -1,10 +1,12 @@
 # sample extension
 
-import os
 import code
-import os, sys, subprocess
+import os
+import subprocess
+import sys
 
-class Extension:
+
+class Monkey:
     def __init__(self, api):
         self.api = api
 
@@ -28,17 +30,19 @@ class Extension:
 
     def get_path(self):
         return self.app.editorsmanager.active_editor.content.text.path
-    
+
     def event_repl(self, *args):
         context = {}
         context.update(**globals())
-        context.update({
-            "api": self.api,
-            "app": self.app,
-            "extendsion": self,
-            "get_text": self.get_text,
-            "get_path": self.get_path
-        })
+        context.update(
+            {
+                "api": self.api,
+                "app": self.app,
+                "extendsion": self,
+                "get_text": self.get_text,
+                "get_path": self.get_path,
+            }
+        )
         print(">>> REPL for biscuit <<<")
         print("You can access the variable app, api and extendsion for further")
         code.InteractiveConsole(locals=context).interact()
@@ -65,11 +69,17 @@ class Extension:
         if not debug:
             marcos = "--marco __WITH_BISCUIT"
         else:
-            marcos =  "--marco __BUILD_DEBUG __WITH_BISCUIT"
+            marcos = "--marco __BUILD_DEBUG __WITH_BISCUIT"
         if not debug:
-            return "python monkey.py build_project --src %s %s " % (active_directory, marcos)
+            return "python monkey.py build_project --src %s %s " % (
+                active_directory,
+                marcos,
+            )
         else:
-            return "python monkey.py build_project --src %s %s" % (active_directory, marcos)
+            return "python monkey.py build_project --src %s %s" % (
+                active_directory,
+                marcos,
+            )
 
     def event_project_build(self, *args):
         os.system(self.resolve_project_build_command())
@@ -82,3 +92,7 @@ class Extension:
 
     def event_project_debug_build(self, *args):
         os.system(self.resolve_project_build_command(True))
+
+
+def setup(api):
+    api.register("monkey", Monkey(api))
