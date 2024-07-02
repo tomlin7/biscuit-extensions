@@ -1,7 +1,9 @@
 {
     "Rust":["rust.py", "tomlin7", "Rust support for Biscuit"],
+    "Clangd":["clangd.py", "tomlin7", "C/C++ intellisense for Biscuit"],
     "Ollama": ["ollama.py", "tomlin7", "Use Llama 3, Mistral, Gemma 2, etc for your assistant"],
     "TypeScript & JavaScript":["javascript_typescript.py", "tomlin7", "Support for JS & TS projects"],
+    "basedpython":["basedpython.py", "tomlin7", "Based-pyright extension for Python"],
     "Clojure":["clojure.py", "Cid0rz", "Clojure language extension for Biscuit"],
     "Black Formatter":["black.py", "tomlin7", "Format your code with Black"],
     "Isort":["isort.py", "tomlin7", "Sort your imports with isort"],
