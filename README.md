@@ -4,42 +4,47 @@
 
 The repository holds the extensions for the [**Biscuit Code Editor**](https://github.com/billyeatcookies/Biscuit) as well as the source code for extensions marketplace site. Read [extension API documentation](https://billyeatcookies.github.io/biscuit/) on the editor site for further information on writing and publishing extensions for Biscuit! [**_Visit the marketplace_**](https://billyeatcookies.github.io/biscuit-extensions) to see and review all of the available extensions.
 
-## Getting Started
+## Writing Your First Extension
 
 Use the following template for simplifying the process of writing extensions for Biscuit, this guide will get you started with the Extension API:
 
 ```py
 # TEMPLATE FOR EXTENSION DEVELOPMENT
 
-# STEPS:
-# 1. Create a new file in the `biscuit/extensions` folder
-# 2. Name it something.py (e.g. hello_world.py)
-# 3. Add following lines (for intellisense):
+# Guide to Extension Development:
+# 1. Clone the Biscuit repository
+# 2. Create a new python file in the `biscuit/extensions` folder
+# 3. Make sure you've installed `biscuit-editor` using `pip install biscuit-editor`
 
 from __future__ import annotations
 
-__version__ = '0.2.0'
-__version_info__ = tuple([ int(num) for num in __version__.split('.')])
+__version__ = "0.0.1"
+__version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import typing
 
+from biscuit.extensions import Extension
+
 if typing.TYPE_CHECKING:
-    from biscuit import ExtensionsAPI
+    from biscuit.api import ExtensionsAPI
 
-# 4. Create a class named `Extension` as follows:
+# 4. Create a class for your extension as follows:
 
-class Extension:
-    """Hello World extension for Biscuit (author: @ghost)
 
-    Contributes:
-    - notification "Hello world!"
-    """
-
+class HelloWorld(Extension):
     def __init__(self, api: ExtensionsAPI) -> None:
-        self.api = api
+        super().__init__(api)
+
+        self.api.logger.info(f"This is a sample log!")
+
+    def install(self) -> None:
+        self.api.notifications.info(f"Hello world!")
 
 
-        self.api.notifications.info("Hello world!")
+def setup(api: ExtensionsAPI) -> None:
+    """Setup the extension"""
+    api.register("helloworld", HelloWorld(api))
+
 
 # 5. Start customizing your extension!
 ```
