@@ -8,13 +8,32 @@ import subprocess as sp
 import tkinter as tk
 import typing
 
+import biscuit
+
 if typing.TYPE_CHECKING:
     from biscuit.api import ExtensionsAPI
 
 
-class VSCode:
+class VSCode(biscuit.common.BaseGame):
+    name = "VSCode"
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+
+        from tkwebview2.tkwebview2 import WebView2, have_runtime, install_runtime
+
+        if not have_runtime():
+            install_runtime()
+
+        view = WebView2(self, 500, 500, background="black")
+        view.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
+        view.load_url("https://vscode.dev")
+
+
+class VSCodeExtension:
     def __init__(self, api: ExtensionsAPI) -> None:
         self.api = api
+        self.base = api.base
 
         if os.name != "nt":
             self.base.notifications.error("VSCode extension works only in  Windows")
@@ -33,27 +52,8 @@ class VSCode:
                 )
 
     def install(self):
-        class VSCode(self.api.Game):
-            name = "VSCode"
-
-            def __init__(self, *args, **kwargs):
-                super().__init__(*args, **kwargs)
-
-                from tkwebview2.tkwebview2 import (
-                    WebView2,
-                    have_runtime,
-                    install_runtime,
-                )
-
-                if not have_runtime():
-                    install_runtime()
-
-                view = WebView2(self, 500, 500, background="black")
-                view.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-                view.load_url("https://vscode.dev")
-
         self.api.register_game(VSCode)
 
 
 def setup(api: ExtensionsAPI) -> None:
-    api.register("vscode", VSCode(api))
+    api.register("vscode", VSCodeExtension(api))

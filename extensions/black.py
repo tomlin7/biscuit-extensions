@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import subprocess as sp
@@ -11,17 +11,19 @@ if typing.TYPE_CHECKING:
 
 
 class Black:
-    """Black extension for Biscuit (author: @billyeatcookies)
-
-    Extension will automatically install black if not installed.
-
-    Contributes:
-    - a command to format python code in the active editor.
-    """
-
     def __init__(self, api: ExtensionsAPI) -> None:
         self.api = api
         self.base = api.base
+
+        if "yapf" in self.base.extensions_manager.installed:
+            self.api.notifications.warning(
+                "Black will disable YAPF language server integration"
+            )
+
+        if "autopep8" in self.base.extensions_manager.installed:
+            self.api.notifications.warning(
+                "Black will disable Autopep8 language server integration"
+            )
 
     def install(self) -> None:
         self.check_black_installation()
@@ -30,14 +32,21 @@ class Black:
         )
 
     def check_black_installation(self):
-        reqs = sp.check_output(["pip", "freeze"])
-        if not "black".encode() in reqs:
-            try:
-                sp.check_call(["pip", "install", "black"])
-            except sp.CalledProcessError:
-                self.api.notifications.warning(
-                    "Python extension requires black to be installed"
-                )
+        try:
+            sp.check_call(["pip", "install", "black"])
+            sp.check_call(["pip", "install", "python-lsp-black"])
+        except sp.CalledProcessError:
+            self.api.notifications.warning(
+                "Black is not installed. Install it to use this extension.",
+                actions=[
+                    (
+                        "Install",
+                        lambda: self.api.terminalmanager.run_command(
+                            "pip install black python-lsp-black"
+                        ),
+                    ),
+                ],
+            )
 
     def format(self, *_) -> str:
         editor = self.api.editorsmanager.active_editor

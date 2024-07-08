@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-__version__ = "0.0.2"
+__version__ = "0.2.0"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 import subprocess as sp
@@ -11,14 +11,6 @@ if typing.TYPE_CHECKING:
 
 
 class ISort:
-    """Isort extension for Biscuit (author: @billyeatcookies)
-
-    Extension will automatically install isort if not installed.
-
-    Contributes:
-    - a command to reorder python imports in the active editor.
-    """
-
     def __init__(self, api: ExtensionsAPI) -> None:
         self.api = api
         self.base = api.base
@@ -30,14 +22,23 @@ class ISort:
         )
 
     def check_isort_installation(self):
-        reqs = sp.check_output(["pip", "freeze"])
-        if not "isort".encode() in reqs:
-            try:
-                sp.check_call(["pip", "install", "isort"])
-            except sp.CalledProcessError:
-                self.api.notifications.warning(
-                    "Python extension requires isort to be installed"
-                )
+        try:
+            sp.check_call(["pip", "install", "isort"], stderr=sp.PIPE, stdout=sp.PIPE)
+            sp.check_call(
+                ["pip", "install", "python-lsp-isort"], stderr=sp.PIPE, stdout=sp.PIPE
+            )
+        except sp.CalledProcessError:
+            self.api.notifications.warning(
+                "Isort is not installed. Install it to use this extension.",
+                actions=[
+                    (
+                        "Install",
+                        lambda: self.api.terminalmanager.run_command(
+                            "pip install isort python-lsp-isort"
+                        ),
+                    ),
+                ],
+            )
 
     def format(self, *_) -> str:
         editor = self.api.editorsmanager.active_editor

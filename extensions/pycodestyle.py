@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import threading
 
-__version__ = "0.2.0"
+__version__ = "0.2.2"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
 
 
@@ -15,14 +15,6 @@ if typing.TYPE_CHECKING:
 
 
 class Pycodestyle:
-    """pycodestyle extension for Biscuit (author: @billyeatcookies)
-
-    Extension will automatically install pycodestyle if not installed.
-
-    Contributes:
-    - problems panel logs
-    """
-
     def __init__(self, api: ExtensionsAPI):
         self.api = api
         self.base = api.base
@@ -40,10 +32,10 @@ class Pycodestyle:
                 )
 
         self.api.commands.register_command(
-            "python: check style (all files)", self.check_all_files
+            "python: check all files (pycodestyle)", self.check_all_files
         )
         self.api.commands.register_command(
-            "python: check style (active file)", self.check_file
+            "python: check active file (pycodestyle)", self.check_file
         )
 
     def check_file(self, *_):
@@ -63,12 +55,18 @@ class Pycodestyle:
             self.problems.clear()
 
     def check_all_files(self, *_):
+        if not self.base.active_directory:
+            return
+
         threading.Thread(target=self.threaded_check_all_files, daemon=True).start()
 
     def threaded_check_all_files(self):
         try:
             output = sp.run(
-                "pycodestyle --first .", shell=True, capture_output=True, text=True
+                f"pycodestyle --first {self.base.active_directory}",
+                shell=True,
+                capture_output=True,
+                text=True,
             )
             self.problems.write(output.stdout)
         except sp.CalledProcessError as e:
