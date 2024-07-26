@@ -9,6 +9,7 @@
     "Ruff":["ruff.py", "tomlin7", "An extremely fast Python linter and formatter."],
     "Isort":["isort.py", "tomlin7", "Sort python imports with isort"],
     "YAPF":["yapf.py", "tomlin7", "Google's Python code formatter"],
+    "TODO": ["todo.py", "tomlin7", "Keep track of TODOs"],
     "Autopep8":["autopep8.py", "tomlin7", "Autoformat Python code to PEP8 standard"],
     "PasteMyst":["pastemyst.py", "tomlin7", "Share code with pastemyst"],
     "Stats on Bar 2":["statsonbar2.py", "tomlin7", "Graphical system stats on statusbar!"],
