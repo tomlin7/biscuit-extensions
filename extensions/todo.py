@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from pytermgui import background
+from biscuit.common.icons import Icons
 
 __version__ = "0.0.1"
 __version_info__ = tuple([int(num) for num in __version__.split(".")])
@@ -11,23 +11,23 @@ from tkinter import ttk
 
 from biscuit.common.ui import ButtonsEntry, Frame
 from biscuit.extensions import Extension
-from biscuit.views import NavigationDrawerView
+from biscuit.views import SideBarView
 
 if typing.TYPE_CHECKING:
     from biscuit.api import ExtensionsAPI
-    from biscuit.layout import NavigationDrawer
+    from biscuit.layout import SideBar
 
 
-class TodoView(NavigationDrawerView):
-    def __init__(self, drawer: NavigationDrawer) -> None:
+class TodoView(SideBarView):
+    def __init__(self, drawer: SideBar) -> None:
         __name__ = "Todo"
-        super().__init__(drawer, name="Todo", icon="checklist")
+        super().__init__(drawer, name="Todo", icon=Icons.CHECKLIST)
         self.base = drawer.base
 
-        self.add_action("clear-all", self.clear_all)
+        self.add_action(Icons.CLEAR_ALL, self.clear_all)
 
         self.entry = ButtonsEntry(
-            self, "Add new task", buttons=[("add", self.add_task)]
+            self, "Add new task", buttons=[(Icons.ADD, self.add_task)]
         )
         self.entry.pack(fill=tk.X, padx=15, pady=7)
 
@@ -88,8 +88,8 @@ class Todo(Extension):
         self.base = api.base
 
     def install(self) -> None:
-        self.view = TodoView(self.base.drawer)
-        self.base.drawer.add_view(self.view)
+        self.view = TodoView(self.base.sidebar)
+        self.base.sidebar.add_view(self.view)
 
 
 def setup(api: ExtensionsAPI) -> None:
