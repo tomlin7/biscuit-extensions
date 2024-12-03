@@ -1,19 +1,29 @@
 [rust]
 submodule = "rust"
+author = "tomlin7"
+description = "Rust language support"
 version = "0.1.0"
 
 # [clangd]
 # submodule = "clangd"
+# author = "tomlin7"
+# description = "clangd extension"
 # version = "0.1.0"
 
 # [ollama]
 # submodule = "ollama"
+# author = "tomlin7"
+# description = "ollama extension"
 # version = "0.1.0"
 
 # ["typescript"]
 # submodule = "typescript"
+# author = "tomlin7"
+# description = "typescript extension"
 # version = "0.1.0"
 
 # [tkinter]
 # submodule = "tkinter"
+# author = "tomlin7"
+# description = "tkinter dev tools"
 # version = "0.1.0"
