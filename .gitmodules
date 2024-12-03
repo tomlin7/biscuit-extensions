@@ -1,0 +1,3 @@
+[submodule "extensions/rust"]
+	path = extensions/rust
+	url = https://github.com/biscuit-extensions/rust.git
