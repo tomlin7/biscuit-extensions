@@ -1,0 +1,19 @@
+[rust]
+submodule = "rust"
+version = "0.1.0"
+
+# [clangd]
+# submodule = "clangd"
+# version = "0.1.0"
+
+# [ollama]
+# submodule = "ollama"
+# version = "0.1.0"
+
+# ["typescript"]
+# submodule = "typescript"
+# version = "0.1.0"
+
+# [tkinter]
+# submodule = "tkinter"
+# version = "0.1.0"
