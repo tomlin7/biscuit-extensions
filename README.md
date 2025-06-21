@@ -1,13 +1,13 @@
 <div align="center">
   <h1>Biscuit Extensions Repository</h1>
-  <p><a href="https://tomlin7.github.io/biscuit-extensions">Marketplace Website</a> • <a href="https://tomlin7.github.io/biscuit">Extension API Docs</a> • <a href="https://github.com/tomlin7/biscuit-extensions?tab=readme-ov-file#-creating-a-new-extension">Developer Guide</a></p>
+  <p><a href="https://biscuit-extensions.github.io/marketplace">Marketplace Website</a> • <a href="https://tomlin7.github.io/biscuit">Extension API Docs</a> • <a href="https://github.com/tomlin7/biscuit-extensions?tab=readme-ov-file#-creating-a-new-extension">Developer Guide</a></p>
   <img src="https://github.com/user-attachments/assets/c706bb26-0b37-4de9-90af-ffc39b18aea2" />
 </div><br>
 
 The **Biscuit Extensions Repository** aggregates community developed extensions for the [Biscuit Code Editor](https://github.com/tomlin7/Biscuit).  
 Each extension lives in its own git submodule inside the `extensions/` folder and is automatically surfaced in the online marketplace.
 
-If you are **looking for an extension** just use the editor's built-in marketplace or the `biscuit ext` CLI (see below).
+If you are **looking for an extension** just use the editor's built-in marketplace or the `biscuit ext` CLI (see below). Visit the new [**Extensions Marketplace**](https://biscuit-extensions.github.io/marketplace) to browse extensions.
 
 ### List available extensions
 
