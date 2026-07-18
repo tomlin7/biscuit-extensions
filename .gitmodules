@@ -4,3 +4,6 @@
 [submodule "extensions/clangd"]
 	path = extensions/clangd
 	url = https://github.com/biscuit-extensions/clangd
+[submodule "extensions/browser"]
+	path = extensions/browser
+	url = https://github.com/biscuit-extensions/browser.git

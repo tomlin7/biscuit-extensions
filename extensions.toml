@@ -32,3 +32,10 @@ version = "0.1.0"
 # author = "tomlin7"
 # description = "tkinter dev tools"
 # version = "0.1.0"
+
+[browser]
+submodule = "browser"
+name = "Browser"
+author = "biscuit"
+description = "A browser extension for Biscuit - surf the web inside your editor"
+version = "0.1.0"
