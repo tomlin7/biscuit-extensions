@@ -7,3 +7,153 @@
 [submodule "extensions/browser"]
 	path = extensions/browser
 	url = https://github.com/biscuit-extensions/browser.git
+[submodule "extensions/json_viewer"]
+	path = extensions/json_viewer
+	url = https://github.com/biscuit-extensions/json_viewer.git
+[submodule "extensions/markdown_tools"]
+	path = extensions/markdown_tools
+	url = https://github.com/biscuit-extensions/markdown_tools.git
+[submodule "extensions/yaml_helper"]
+	path = extensions/yaml_helper
+	url = https://github.com/biscuit-extensions/yaml_helper.git
+[submodule "extensions/csv_preview"]
+	path = extensions/csv_preview
+	url = https://github.com/biscuit-extensions/csv_preview.git
+[submodule "extensions/xml_formatter"]
+	path = extensions/xml_formatter
+	url = https://github.com/biscuit-extensions/xml_formatter.git
+[submodule "extensions/sql_formatter"]
+	path = extensions/sql_formatter
+	url = https://github.com/biscuit-extensions/sql_formatter.git
+[submodule "extensions/uuid_generator"]
+	path = extensions/uuid_generator
+	url = https://github.com/biscuit-extensions/uuid_generator.git
+[submodule "extensions/lorem_ipsum"]
+	path = extensions/lorem_ipsum
+	url = https://github.com/biscuit-extensions/lorem_ipsum.git
+[submodule "extensions/color_highlighter"]
+	path = extensions/color_highlighter
+	url = https://github.com/biscuit-extensions/color_highlighter.git
+[submodule "extensions/todo_tracker"]
+	path = extensions/todo_tracker
+	url = https://github.com/biscuit-extensions/todo_tracker.git
+[submodule "extensions/word_counter"]
+	path = extensions/word_counter
+	url = https://github.com/biscuit-extensions/word_counter.git
+[submodule "extensions/case_converter"]
+	path = extensions/case_converter
+	url = https://github.com/biscuit-extensions/case_converter.git
+[submodule "extensions/base64_tools"]
+	path = extensions/base64_tools
+	url = https://github.com/biscuit-extensions/base64_tools.git
+[submodule "extensions/hash_generator"]
+	path = extensions/hash_generator
+	url = https://github.com/biscuit-extensions/hash_generator.git
+[submodule "extensions/html_entities"]
+	path = extensions/html_entities
+	url = https://github.com/biscuit-extensions/html_entities.git
+[submodule "extensions/url_tools"]
+	path = extensions/url_tools
+	url = https://github.com/biscuit-extensions/url_tools.git
+[submodule "extensions/sort_lines"]
+	path = extensions/sort_lines
+	url = https://github.com/biscuit-extensions/sort_lines.git
+[submodule "extensions/line_numbers_toggle"]
+	path = extensions/line_numbers_toggle
+	url = https://github.com/biscuit-extensions/line_numbers_toggle.git
+[submodule "extensions/bracket_pair_colorizer"]
+	path = extensions/bracket_pair_colorizer
+	url = https://github.com/biscuit-extensions/bracket_pair_colorizer.git
+[submodule "extensions/code_stats"]
+	path = extensions/code_stats
+	url = https://github.com/biscuit-extensions/code_stats.git
+[submodule "extensions/editor_clock"]
+	path = extensions/editor_clock
+	url = https://github.com/biscuit-extensions/editor_clock.git
+[submodule "extensions/zen_mode"]
+	path = extensions/zen_mode
+	url = https://github.com/biscuit-extensions/zen_mode.git
+[submodule "extensions/minifier"]
+	path = extensions/minifier
+	url = https://github.com/biscuit-extensions/minifier.git
+[submodule "extensions/jwt_debugger"]
+	path = extensions/jwt_debugger
+	url = https://github.com/biscuit-extensions/jwt_debugger.git
+[submodule "extensions/timestamp_tools"]
+	path = extensions/timestamp_tools
+	url = https://github.com/biscuit-extensions/timestamp_tools.git
+[submodule "extensions/regex_tester"]
+	path = extensions/regex_tester
+	url = https://github.com/biscuit-extensions/regex_tester.git
+[submodule "extensions/diff_viewer"]
+	path = extensions/diff_viewer
+	url = https://github.com/biscuit-extensions/diff_viewer.git
+[submodule "extensions/snippet_manager"]
+	path = extensions/snippet_manager
+	url = https://github.com/biscuit-extensions/snippet_manager.git
+[submodule "extensions/hex_viewer"]
+	path = extensions/hex_viewer
+	url = https://github.com/biscuit-extensions/hex_viewer.git
+[submodule "extensions/http_client"]
+	path = extensions/http_client
+	url = https://github.com/biscuit-extensions/http_client.git
+[submodule "extensions/env_linter"]
+	path = extensions/env_linter
+	url = https://github.com/biscuit-extensions/env_linter.git
+[submodule "extensions/git_changelog_generator"]
+	path = extensions/git_changelog_generator
+	url = https://github.com/biscuit-extensions/git_changelog_generator.git
+[submodule "extensions/file_templates"]
+	path = extensions/file_templates
+	url = https://github.com/biscuit-extensions/file_templates.git
+[submodule "extensions/indent_guide_pro"]
+	path = extensions/indent_guide_pro
+	url = https://github.com/biscuit-extensions/indent_guide_pro.git
+[submodule "extensions/whitespace_cleaner"]
+	path = extensions/whitespace_cleaner
+	url = https://github.com/biscuit-extensions/whitespace_cleaner.git
+[submodule "extensions/spell_checker"]
+	path = extensions/spell_checker
+	url = https://github.com/biscuit-extensions/spell_checker.git
+[submodule "extensions/emmet_biscuit"]
+	path = extensions/emmet_biscuit
+	url = https://github.com/biscuit-extensions/emmet_biscuit.git
+[submodule "extensions/bookmarks"]
+	path = extensions/bookmarks
+	url = https://github.com/biscuit-extensions/bookmarks.git
+[submodule "extensions/ascii_art"]
+	path = extensions/ascii_art
+	url = https://github.com/biscuit-extensions/ascii_art.git
+[submodule "extensions/git_status_bar"]
+	path = extensions/git_status_bar
+	url = https://github.com/biscuit-extensions/git_status_bar.git
+[submodule "extensions/pomodoro_timer"]
+	path = extensions/pomodoro_timer
+	url = https://github.com/biscuit-extensions/pomodoro_timer.git
+[submodule "extensions/auto_save"]
+	path = extensions/auto_save
+	url = https://github.com/biscuit-extensions/auto_save.git
+[submodule "extensions/auto_rename_tag"]
+	path = extensions/auto_rename_tag
+	url = https://github.com/biscuit-extensions/auto_rename_tag.git
+[submodule "extensions/path_autocomplete"]
+	path = extensions/path_autocomplete
+	url = https://github.com/biscuit-extensions/path_autocomplete.git
+[submodule "extensions/color_picker"]
+	path = extensions/color_picker
+	url = https://github.com/biscuit-extensions/color_picker.git
+[submodule "extensions/calculator"]
+	path = extensions/calculator
+	url = https://github.com/biscuit-extensions/calculator.git
+[submodule "extensions/dockerfile_helper"]
+	path = extensions/dockerfile_helper
+	url = https://github.com/biscuit-extensions/dockerfile_helper.git
+[submodule "extensions/quick_notes"]
+	path = extensions/quick_notes
+	url = https://github.com/biscuit-extensions/quick_notes.git
+[submodule "extensions/code_snapshot"]
+	path = extensions/code_snapshot
+	url = https://github.com/biscuit-extensions/code_snapshot.git
+[submodule "extensions/project_dashboard"]
+	path = extensions/project_dashboard
+	url = https://github.com/biscuit-extensions/project_dashboard.git
