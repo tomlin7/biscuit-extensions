@@ -157,3 +157,78 @@
 [submodule "extensions/project_dashboard"]
 	path = extensions/project_dashboard
 	url = https://github.com/biscuit-extensions/project_dashboard.git
+[submodule "extensions/python"]
+	path = extensions/python
+	url = https://github.com/biscuit-extensions/python.git
+[submodule "extensions/prettier"]
+	path = extensions/prettier
+	url = https://github.com/biscuit-extensions/prettier.git
+[submodule "extensions/eslint"]
+	path = extensions/eslint
+	url = https://github.com/biscuit-extensions/eslint.git
+[submodule "extensions/gitlens"]
+	path = extensions/gitlens
+	url = https://github.com/biscuit-extensions/gitlens.git
+[submodule "extensions/live_server"]
+	path = extensions/live_server
+	url = https://github.com/biscuit-extensions/live_server.git
+[submodule "extensions/better_comments"]
+	path = extensions/better_comments
+	url = https://github.com/biscuit-extensions/better_comments.git
+[submodule "extensions/error_lens"]
+	path = extensions/error_lens
+	url = https://github.com/biscuit-extensions/error_lens.git
+[submodule "extensions/peacock"]
+	path = extensions/peacock
+	url = https://github.com/biscuit-extensions/peacock.git
+[submodule "extensions/turbo_console_log"]
+	path = extensions/turbo_console_log
+	url = https://github.com/biscuit-extensions/turbo_console_log.git
+[submodule "extensions/auto_close_tag"]
+	path = extensions/auto_close_tag
+	url = https://github.com/biscuit-extensions/auto_close_tag.git
+[submodule "extensions/code_runner"]
+	path = extensions/code_runner
+	url = https://github.com/biscuit-extensions/code_runner.git
+[submodule "extensions/git_graph"]
+	path = extensions/git_graph
+	url = https://github.com/biscuit-extensions/git_graph.git
+[submodule "extensions/remote_ssh"]
+	path = extensions/remote_ssh
+	url = https://github.com/biscuit-extensions/remote_ssh.git
+[submodule "extensions/editorconfig"]
+	path = extensions/editorconfig
+	url = https://github.com/biscuit-extensions/editorconfig.git
+[submodule "extensions/import_cost"]
+	path = extensions/import_cost
+	url = https://github.com/biscuit-extensions/import_cost.git
+[submodule "extensions/auto_import"]
+	path = extensions/auto_import
+	url = https://github.com/biscuit-extensions/auto_import.git
+[submodule "extensions/quokka"]
+	path = extensions/quokka
+	url = https://github.com/biscuit-extensions/quokka.git
+[submodule "extensions/settings_sync"]
+	path = extensions/settings_sync
+	url = https://github.com/biscuit-extensions/settings_sync.git
+[submodule "extensions/html_css_support"]
+	path = extensions/html_css_support
+	url = https://github.com/biscuit-extensions/html_css_support.git
+[submodule "extensions/live_share"]
+	path = extensions/live_share
+	url = https://github.com/biscuit-extensions/live_share.git
+[submodule "extensions/sonarlint"]
+	path = extensions/sonarlint
+	url = https://github.com/biscuit-extensions/sonarlint.git
+[submodule "extensions/material_icon_theme"]
+	path = extensions/material_icon_theme
+	url = https://github.com/biscuit-extensions/material_icon_theme.git
+[submodule "extensions/css_peek"]
+	path = extensions/css_peek
+	url = https://github.com/biscuit-extensions/css_peek.git
+[submodule "extensions/npm_intellisense"]
+	path = extensions/npm_intellisense
+	url = https://github.com/biscuit-extensions/npm_intellisense.git
+[submodule "extensions/jupyter"]
+	path = extensions/jupyter
+	url = https://github.com/biscuit-extensions/jupyter.git

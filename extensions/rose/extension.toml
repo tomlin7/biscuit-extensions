@@ -1,0 +1,7 @@
+[extension]
+id = "rose"
+name = "Rose"
+version = "0.1.0"
+description = "Rose extension for Biscuit"
+author = "biscuit-extensions"
+icon = "icon.png"

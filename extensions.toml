@@ -389,3 +389,178 @@ name = "Project Dashboard"
 author = "billyeatcookies"
 description = "Project overview with git status, recent files, and stats"
 version = "0.1.0"
+
+[python]
+submodule = "python"
+name = "Python"
+author = "biscuit-extensions"
+description = "Python language support, virtual environment manager, and script runner"
+version = "0.1.0"
+
+[prettier]
+submodule = "prettier"
+name = "Prettier"
+author = "biscuit-extensions"
+description = "Multi-language opinionated code formatter for JS, TS, HTML, CSS, JSON, and Markdown"
+version = "0.1.0"
+
+[eslint]
+submodule = "eslint"
+name = "ESLint"
+author = "biscuit-extensions"
+description = "JavaScript and TypeScript linter and code quality scanner"
+version = "0.1.0"
+
+[gitlens]
+submodule = "gitlens"
+name = "GitLens"
+author = "biscuit-extensions"
+description = "Git supercharged — inline blame annotations, file history, and commit navigation"
+version = "0.1.0"
+
+[live_server]
+submodule = "live_server"
+name = "Live Server"
+author = "biscuit-extensions"
+description = "Local development server with live reload for static and dynamic web pages"
+version = "0.1.0"
+
+[better_comments]
+submodule = "better_comments"
+name = "Better Comments"
+author = "biscuit-extensions"
+description = "Human-friendly colorful comment highlighting for alerts, queries, and todos"
+version = "0.1.0"
+
+[error_lens]
+submodule = "error_lens"
+name = "Error Lens"
+author = "biscuit-extensions"
+description = "Inline error and warning diagnostic messages directly on editor code lines"
+version = "0.1.0"
+
+[peacock]
+submodule = "peacock"
+name = "Peacock"
+author = "biscuit-extensions"
+description = "Subtly change workspace accent colors to distinguish between projects"
+version = "0.1.0"
+
+[turbo_console_log]
+submodule = "turbo_console_log"
+name = "Turbo Console Log"
+author = "biscuit-extensions"
+description = "Automated insertion of meaningful debug print and console log statements"
+version = "0.1.0"
+
+[auto_close_tag]
+submodule = "auto_close_tag"
+name = "Auto Close Tag"
+author = "biscuit-extensions"
+description = "Automatically insert closing HTML and XML tags when typing an opening tag"
+version = "0.1.0"
+
+[code_runner]
+submodule = "code_runner"
+name = "Code Runner"
+author = "biscuit-extensions"
+description = "Run code snippets or files for multiple languages with one shortcut"
+version = "0.1.0"
+
+[git_graph]
+submodule = "git_graph"
+name = "Git Graph"
+author = "biscuit-extensions"
+description = "Visual commit history graph and interactive branch DAG tree viewer"
+version = "0.1.0"
+
+[remote_ssh]
+submodule = "remote_ssh"
+name = "Remote SSH"
+author = "biscuit-extensions"
+description = "Manage SSH hosts, port tunnels, and remote workspace connections"
+version = "0.1.0"
+
+[editorconfig]
+submodule = "editorconfig"
+name = "EditorConfig"
+author = "biscuit-extensions"
+description = "Enforce consistent coding styles and whitespace formatting across projects"
+version = "0.1.0"
+
+[import_cost]
+submodule = "import_cost"
+name = "Import Cost"
+author = "biscuit-extensions"
+description = "Display package import and bundle sizes inline next to import statements"
+version = "0.1.0"
+
+[auto_import]
+submodule = "auto_import"
+name = "Auto Import"
+author = "biscuit-extensions"
+description = "Automatically scan workspace symbols and generate missing import statements"
+version = "0.1.0"
+
+[quokka]
+submodule = "quokka"
+name = "Quokka"
+author = "biscuit-extensions"
+description = "Live interactive scratchpad runner with instant expression evaluation"
+version = "0.1.0"
+
+[settings_sync]
+submodule = "settings_sync"
+name = "Settings Sync"
+author = "biscuit-extensions"
+description = "Synchronize settings, keybindings, and extensions across devices"
+version = "0.1.0"
+
+[html_css_support]
+submodule = "html_css_support"
+name = "HTML CSS Support"
+author = "biscuit-extensions"
+description = "CSS class and ID completion for HTML, JSX, and template files"
+version = "0.1.0"
+
+[live_share]
+submodule = "live_share"
+name = "Live Share"
+author = "biscuit-extensions"
+description = "Collaborative real-time editing and paired coding workspace sharing"
+version = "0.1.0"
+
+[sonarlint]
+submodule = "sonarlint"
+name = "SonarLint"
+author = "biscuit-extensions"
+description = "Scan source code for bugs, code smells, and security vulnerabilities"
+version = "0.1.0"
+
+[material_icon_theme]
+submodule = "material_icon_theme"
+name = "Material Icon Theme"
+author = "biscuit-extensions"
+description = "Material design icon set and file association mappings for Biscuit"
+version = "0.1.0"
+
+[css_peek]
+submodule = "css_peek"
+name = "CSS Peek"
+author = "biscuit-extensions"
+description = "Jump directly to CSS selector definitions from HTML classes and IDs"
+version = "0.1.0"
+
+[npm_intellisense]
+submodule = "npm_intellisense"
+name = "npm Intellisense"
+author = "biscuit-extensions"
+description = "Autocomplete npm module imports from package.json and node_modules"
+version = "0.1.0"
+
+[jupyter]
+submodule = "jupyter"
+name = "Jupyter"
+author = "biscuit-extensions"
+description = "Interactive Jupyter notebook runner and cell-based Python execution"
+version = "0.1.0"
