@@ -564,3 +564,59 @@ name = "Jupyter"
 author = "biscuit-extensions"
 description = "Interactive Jupyter notebook runner and cell-based Python execution"
 version = "0.1.0"
+
+[docker]
+submodule = "docker"
+name = "Docker"
+author = "biscuit-extensions"
+description = "Manage Docker containers, images, volumes, and compose environments"
+version = "0.1.0"
+
+[tailwind_css]
+submodule = "tailwind_css"
+name = "Tailwind CSS IntelliSense"
+author = "biscuit-extensions"
+description = "Intelligent Tailwind CSS class autocompletion, hover previews, and linting"
+version = "0.1.0"
+
+[thunder_client]
+submodule = "thunder_client"
+name = "Thunder Client"
+author = "biscuit-extensions"
+description = "Lightweight GUI REST API client with request runner and collections"
+version = "0.1.0"
+
+[live_sass]
+submodule = "live_sass"
+name = "Live Sass Compiler"
+author = "biscuit-extensions"
+description = "Compile Sass and SCSS files to CSS with live reload and sourcemap support"
+version = "0.1.0"
+
+[drawio]
+submodule = "drawio"
+name = "Draw.io Integration"
+author = "biscuit-extensions"
+description = "Interactive diagram and flowchart designer directly inside Biscuit"
+version = "0.1.0"
+
+[go]
+submodule = "go"
+name = "Go"
+author = "biscuit-extensions"
+description = "Rich Go language support, test runner, formatting, and build tools"
+version = "0.1.0"
+
+[csharp]
+submodule = "csharp"
+name = "C#"
+author = "biscuit-extensions"
+description = "C# language support, .NET build runner, and solution management"
+version = "0.1.0"
+
+[github_pull_requests]
+submodule = "github_pull_requests"
+name = "GitHub Pull Requests"
+author = "biscuit-extensions"
+description = "Review and manage GitHub pull requests and issues within Biscuit"
+version = "0.1.0"

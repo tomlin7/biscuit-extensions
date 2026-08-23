@@ -232,3 +232,27 @@
 [submodule "extensions/jupyter"]
 	path = extensions/jupyter
 	url = https://github.com/biscuit-extensions/jupyter.git
+[submodule "extensions/docker"]
+	path = extensions/docker
+	url = https://github.com/biscuit-extensions/docker.git
+[submodule "extensions/tailwind_css"]
+	path = extensions/tailwind_css
+	url = https://github.com/biscuit-extensions/tailwind_css.git
+[submodule "extensions/thunder_client"]
+	path = extensions/thunder_client
+	url = https://github.com/biscuit-extensions/thunder_client.git
+[submodule "extensions/live_sass"]
+	path = extensions/live_sass
+	url = https://github.com/biscuit-extensions/live_sass.git
+[submodule "extensions/drawio"]
+	path = extensions/drawio
+	url = https://github.com/biscuit-extensions/drawio.git
+[submodule "extensions/go"]
+	path = extensions/go
+	url = https://github.com/biscuit-extensions/go.git
+[submodule "extensions/csharp"]
+	path = extensions/csharp
+	url = https://github.com/biscuit-extensions/csharp.git
+[submodule "extensions/github_pull_requests"]
+	path = extensions/github_pull_requests
+	url = https://github.com/biscuit-extensions/github_pull_requests.git
