@@ -43,350 +43,350 @@ version = "0.1.0"
 [json_viewer]
 submodule = "json_viewer"
 name = "JSON Viewer"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "JSON viewer and validator for Biscuit"
 version = "0.1.0"
 
 [markdown_tools]
 submodule = "markdown_tools"
 name = "Markdown Tools"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Markdown preview, table formatting, and syntax utilities"
 version = "0.1.0"
 
 [yaml_helper]
 submodule = "yaml_helper"
 name = "YAML Helper"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "YAML linting, validation, and schema tools"
 version = "0.1.0"
 
 [csv_preview]
 submodule = "csv_preview"
 name = "CSV Preview"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Tabular viewer and editor for CSV and TSV files"
 version = "0.1.0"
 
 [xml_formatter]
 submodule = "xml_formatter"
 name = "XML Formatter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "XML formatting, beautification, and validation"
 version = "0.1.0"
 
 [sql_formatter]
 submodule = "sql_formatter"
 name = "SQL Formatter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "SQL query formatting and dialect beautifier"
 version = "0.1.0"
 
 [uuid_generator]
 submodule = "uuid_generator"
 name = "UUID Generator"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "UUID v4/v7 generator and batch insertion tool"
 version = "0.1.0"
 
 [lorem_ipsum]
 submodule = "lorem_ipsum"
 name = "Lorem Ipsum"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Lorem Ipsum placeholder text and paragraph generator"
 version = "0.1.0"
 
 [color_highlighter]
 submodule = "color_highlighter"
 name = "Color Highlighter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Inline CSS color highlight preview for hex, rgb, and hsl"
 version = "0.1.0"
 
 [todo_tracker]
 submodule = "todo_tracker"
 name = "TODO Tracker"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Scan workspace for TODO, FIXME, and HACK annotations"
 version = "0.1.0"
 
 [word_counter]
 submodule = "word_counter"
 name = "Word Counter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Real-time word, line, and character count statistics"
 version = "0.1.0"
 
 [case_converter]
 submodule = "case_converter"
 name = "Case Converter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Convert identifier case between camel, snake, kebab, and pascal"
 version = "0.1.0"
 
 [base64_tools]
 submodule = "base64_tools"
 name = "Base64 Tools"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Base64 string encoder, decoder, and data URL parser"
 version = "0.1.0"
 
 [hash_generator]
 submodule = "hash_generator"
 name = "Hash Generator"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Cryptographic hash generator for MD5, SHA256, and SHA512"
 version = "0.1.0"
 
 [html_entities]
 submodule = "html_entities"
 name = "HTML Entities"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "HTML entity encoder, decoder, and escape utility"
 version = "0.1.0"
 
 [url_tools]
 submodule = "url_tools"
 name = "URL Tools"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "URL encoder, decoder, and query string parameter parser"
 version = "0.1.0"
 
 [sort_lines]
 submodule = "sort_lines"
 name = "Sort Lines"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Sort lines alphabetically, numerically, and remove duplicates"
 version = "0.1.0"
 
 [line_numbers_toggle]
 submodule = "line_numbers_toggle"
 name = "Line Numbers Toggle"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Quick toggle between relative, absolute, and hidden line numbers"
 version = "0.1.0"
 
 [bracket_pair_colorizer]
 submodule = "bracket_pair_colorizer"
 name = "Bracket Pair Colorizer"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Rainbow bracket pair colorization and delimiter highlighting"
 version = "0.1.0"
 
 [code_stats]
 submodule = "code_stats"
 name = "Code Stats"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Project code line count, language breakdown, and statistics"
 version = "0.1.0"
 
 [editor_clock]
 submodule = "editor_clock"
 name = "Editor Clock"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Statusbar time display and focus clock for Biscuit"
 version = "0.1.0"
 
 [zen_mode]
 submodule = "zen_mode"
 name = "Zen Mode"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Distraction-free zen mode for focused writing and coding"
 version = "0.1.0"
 
 [minifier]
 submodule = "minifier"
 name = "Minifier"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Fast CSS, JavaScript, and HTML minification utility"
 version = "0.1.0"
 
 [jwt_debugger]
 submodule = "jwt_debugger"
 name = "JWT Debugger"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Decode, verify, and inspect JSON Web Tokens"
 version = "0.1.0"
 
 [timestamp_tools]
 submodule = "timestamp_tools"
 name = "Timestamp Tools"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Convert Unix timestamps to human readable dates and vice-versa"
 version = "0.1.0"
 
 [regex_tester]
 submodule = "regex_tester"
 name = "Regex Tester"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Interactive regular expression tester and pattern evaluator"
 version = "0.1.0"
 
 [diff_viewer]
 submodule = "diff_viewer"
 name = "Diff Viewer"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Side-by-side visual difference viewer for open editors"
 version = "0.1.0"
 
 [snippet_manager]
 submodule = "snippet_manager"
 name = "Snippet Manager"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Manage, expand, and organize custom user code snippets"
 version = "0.1.0"
 
 [hex_viewer]
 submodule = "hex_viewer"
 name = "Hex Viewer"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Hexadecimal viewer and binary file inspector"
 version = "0.1.0"
 
 [http_client]
 submodule = "http_client"
 name = "HTTP Client"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Lightweight REST API client and request runner"
 version = "0.1.0"
 
 [env_linter]
 submodule = "env_linter"
 name = "Env Linter"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Syntax checker and linter for .env environment files"
 version = "0.1.0"
 
 [git_changelog_generator]
 submodule = "git_changelog_generator"
 name = "Git Changelog Generator"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Generate clean release changelogs from git commit logs"
 version = "0.1.0"
 
 [file_templates]
 submodule = "file_templates"
 name = "File Templates"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Boilerplate code templates for new classes and modules"
 version = "0.1.0"
 
 [indent_guide_pro]
 submodule = "indent_guide_pro"
 name = "Indent Guide Pro"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Enhanced indentation guides and block scope visualizers"
 version = "0.1.0"
 
 [whitespace_cleaner]
 submodule = "whitespace_cleaner"
 name = "Whitespace Cleaner"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Strip trailing whitespace and normalize end-of-line characters"
 version = "0.1.0"
 
 [spell_checker]
 submodule = "spell_checker"
 name = "Spell Checker"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Inline spelling checker for source code comments and docstrings"
 version = "0.1.0"
 
 [emmet_biscuit]
 submodule = "emmet_biscuit"
 name = "Emmet Biscuit"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Emmet abbreviation expansion for rapid HTML and CSS authoring"
 version = "0.1.0"
 
 [bookmarks]
 submodule = "bookmarks"
 name = "Bookmarks"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Set, clear, and jump between line bookmarks in files"
 version = "0.1.0"
 
 [ascii_art]
 submodule = "ascii_art"
 name = "ASCII Art"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Generate ASCII art text banners and box drawings"
 version = "0.1.0"
 
 [git_status_bar]
 submodule = "git_status_bar"
 name = "Git Status Bar"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Git branch, ahead/behind count, and dirty status in statusbar"
 version = "0.1.0"
 
 [pomodoro_timer]
 submodule = "pomodoro_timer"
 name = "Pomodoro Timer"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Productivity Pomodoro focus and break interval timer"
 version = "0.1.0"
 
 [auto_save]
 submodule = "auto_save"
 name = "Auto Save"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Configurable background auto-save timer for open buffers"
 version = "0.1.0"
 
 [auto_rename_tag]
 submodule = "auto_rename_tag"
 name = "Auto Rename Tag"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Automatically synchronize opening and closing HTML/XML tags"
 version = "0.1.0"
 
 [path_autocomplete]
 submodule = "path_autocomplete"
 name = "Path Autocomplete"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "File and directory path completion within string literals"
 version = "0.1.0"
 
 [color_picker]
 submodule = "color_picker"
 name = "Color Picker"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Integrated color picker dialog and hex palette selector"
 version = "0.1.0"
 
 [calculator]
 submodule = "calculator"
 name = "Calculator"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Inline arithmetic expression evaluator and math tools"
 version = "0.1.0"
 
 [dockerfile_helper]
 submodule = "dockerfile_helper"
 name = "Dockerfile Helper"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Syntax highlighting and snippet helpers for Dockerfiles"
 version = "0.1.0"
 
 [quick_notes]
 submodule = "quick_notes"
 name = "Quick Notes"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Scratchpad panel for quick thoughts and temporary code snippets"
 version = "0.1.0"
 
 [code_snapshot]
 submodule = "code_snapshot"
 name = "Code Snapshot"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Export beautifully formatted code snippets as card images"
 version = "0.1.0"
 
 [project_dashboard]
 submodule = "project_dashboard"
 name = "Project Dashboard"
-author = "billyeatcookies"
+author = "tomlin7"
 description = "Project overview with git status, recent files, and stats"
 version = "0.1.0"
 
