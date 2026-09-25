@@ -44,15 +44,23 @@ version = "0.1.0"
 submodule = "json_viewer"
 name = "JSON Viewer"
 author = "tomlin7"
-description = "JSON viewer and validator for Biscuit"
-version = "0.1.0"
+description = "JSON syntax formatting, minification, tree structure explorer, and validation tool"
+version = "0.2.0"
+
+[json_viewer.dependencies]
+python = []
+tools = []
 
 [markdown_tools]
 submodule = "markdown_tools"
 name = "Markdown Tools"
 author = "tomlin7"
-description = "Markdown preview, table formatting, and syntax utilities"
-version = "0.1.0"
+description = "Markdown table formatter, Table of Contents generator, and document outline parser"
+version = "0.2.0"
+
+[markdown_tools.dependencies]
+python = []
+tools = []
 
 [yaml_helper]
 submodule = "yaml_helper"
@@ -105,10 +113,14 @@ version = "0.1.0"
 
 [todo_tracker]
 submodule = "todo_tracker"
-name = "TODO Tracker"
+name = "Todo Tracker"
 author = "tomlin7"
-description = "Scan workspace for TODO, FIXME, and HACK annotations"
-version = "0.1.0"
+description = "Workspace scanner for TODO, FIXME, HACK, BUG, and NOTE annotations with line navigation and status summary"
+version = "0.2.0"
+
+[todo_tracker.dependencies]
+python = []
+tools = []
 
 [word_counter]
 submodule = "word_counter"
@@ -227,14 +239,22 @@ submodule = "diff_viewer"
 name = "Diff Viewer"
 author = "tomlin7"
 description = "Side-by-side visual difference viewer for open editors"
-version = "0.1.0"
+version = "0.2.0"
+
+[diff_viewer.dependencies]
+python = []
+tools = []
 
 [snippet_manager]
 submodule = "snippet_manager"
 name = "Snippet Manager"
 author = "tomlin7"
-description = "Manage, expand, and organize custom user code snippets"
-version = "0.1.0"
+description = "Custom code snippet repository, keyword prefix expansion engine, and tabstop placeholder navigator"
+version = "0.2.0"
+
+[snippet_manager.dependencies]
+python = []
+tools = []
 
 [hex_viewer]
 submodule = "hex_viewer"
@@ -289,22 +309,34 @@ version = "0.1.0"
 submodule = "spell_checker"
 name = "Spell Checker"
 author = "tomlin7"
-description = "Inline spelling checker for source code comments and docstrings"
-version = "0.1.0"
+description = "Source code typo detector, camelCase tokenizer, Levenshtein suggestion generator, and custom dictionary"
+version = "0.2.0"
+
+[spell_checker.dependencies]
+python = ["pyspellchecker>=0.8.0"]
+tools = []
 
 [emmet_biscuit]
 submodule = "emmet_biscuit"
-name = "Emmet Biscuit"
+name = "Emmet"
 author = "tomlin7"
-description = "Emmet abbreviation expansion for rapid HTML and CSS authoring"
-version = "0.1.0"
+description = "HTML and CSS abbreviation expansion engine, snippet generator, and tag wrapper"
+version = "0.2.0"
+
+[emmet_biscuit.dependencies]
+python = []
+tools = []
 
 [bookmarks]
 submodule = "bookmarks"
 name = "Bookmarks"
 author = "tomlin7"
-description = "Set, clear, and jump between line bookmarks in files"
-version = "0.1.0"
+description = "Line and file bookmark toggle, jumping, file bookmark registry, and session persistence"
+version = "0.2.0"
+
+[bookmarks.dependencies]
+python = []
+tools = []
 
 [ascii_art]
 submodule = "ascii_art"
@@ -393,37 +425,57 @@ version = "0.1.0"
 [python]
 submodule = "python"
 name = "Python"
-author = "biscuit-extensions"
-description = "Python language support, virtual environment manager, and script runner"
-version = "0.1.0"
+author = "tomlin7"
+description = "Python interpreter detection, execution runner, pytest discovery and test runner"
+version = "0.2.0"
+
+[python.dependencies]
+python = ["pytest>=8.0.0"]
+tools = ["python"]
 
 [prettier]
 submodule = "prettier"
 name = "Prettier"
-author = "biscuit-extensions"
-description = "Multi-language opinionated code formatter for JS, TS, HTML, CSS, JSON, and Markdown"
-version = "0.1.0"
+author = "tomlin7"
+description = "Multi-language opinionated code formatter with .prettierrc configuration support"
+version = "0.2.0"
+
+[prettier.dependencies]
+python = ["pyyaml>=6.0.1"]
+tools = ["node", "npx"]
 
 [eslint]
 submodule = "eslint"
 name = "ESLint"
-author = "biscuit-extensions"
-description = "JavaScript and TypeScript linter and code quality scanner"
-version = "0.1.0"
+author = "tomlin7"
+description = "JavaScript and TypeScript problem scanner, rule linter, and diagnostic annotator"
+version = "0.2.0"
+
+[eslint.dependencies]
+python = []
+tools = ["node", "eslint", "npx"]
 
 [gitlens]
 submodule = "gitlens"
 name = "GitLens"
-author = "biscuit-extensions"
+author = "tomlin7"
 description = "Git supercharged — inline blame annotations, file history, and commit navigation"
-version = "0.1.0"
+version = "0.2.0"
+
+[gitlens.dependencies]
+python = []
+tools = ["git"]
 
 [live_server]
 submodule = "live_server"
 name = "Live Server"
-author = "biscuit-extensions"
+author = "tomlin7"
 description = "Local development server with live reload for static and dynamic web pages"
-version = "0.1.0"
+version = "0.2.0"
+
+[live_server.dependencies]
+python = []
+tools = []
 
 [better_comments]
 submodule = "better_comments"
@@ -435,9 +487,13 @@ version = "0.1.0"
 [error_lens]
 submodule = "error_lens"
 name = "Error Lens"
-author = "biscuit-extensions"
-description = "Inline error and warning diagnostic messages directly on editor code lines"
-version = "0.1.0"
+author = "tomlin7"
+description = "Real-time diagnostic message line decorator, warning display, and problem navigation"
+version = "0.2.0"
+
+[error_lens.dependencies]
+python = []
+tools = []
 
 [peacock]
 submodule = "peacock"
@@ -470,16 +526,24 @@ version = "0.1.0"
 [git_graph]
 submodule = "git_graph"
 name = "Git Graph"
-author = "biscuit-extensions"
+author = "tomlin7"
 description = "Visual commit history graph and interactive branch DAG tree viewer"
-version = "0.1.0"
+version = "0.2.0"
+
+[git_graph.dependencies]
+python = []
+tools = ["git"]
 
 [remote_ssh]
 submodule = "remote_ssh"
 name = "Remote SSH"
-author = "biscuit-extensions"
-description = "Manage SSH hosts, port tunnels, and remote workspace connections"
-version = "0.1.0"
+author = "tomlin7"
+description = "SSH host configuration parser, connection manager, and remote execution bridge"
+version = "0.2.0"
+
+[remote_ssh.dependencies]
+python = ["paramiko>=3.4.0"]
+tools = ["ssh"]
 
 [editorconfig]
 submodule = "editorconfig"
@@ -561,62 +625,99 @@ version = "0.1.0"
 [jupyter]
 submodule = "jupyter"
 name = "Jupyter"
-author = "biscuit-extensions"
-description = "Interactive Jupyter notebook runner and cell-based Python execution"
-version = "0.1.0"
+author = "tomlin7"
+description = "Jupyter Notebook (.ipynb) cell viewer, cell execution runner, and output renderer"
+version = "0.2.0"
+
+[jupyter.dependencies]
+python = ["nbformat>=5.9.0", "jupyter_client>=8.6.0", "ipykernel>=6.29.0"]
+tools = ["python", "jupyter"]
 
 [docker]
 submodule = "docker"
 name = "Docker"
-author = "biscuit-extensions"
+author = "tomlin7"
 description = "Manage Docker containers, images, volumes, and compose environments"
-version = "0.1.0"
+version = "0.2.0"
+
+[docker.dependencies]
+python = ["docker>=7.0.0", "pyyaml>=6.0.1"]
+tools = ["docker"]
 
 [tailwind_css]
 submodule = "tailwind_css"
 name = "Tailwind CSS IntelliSense"
-author = "biscuit-extensions"
-description = "Intelligent Tailwind CSS class autocompletion, hover previews, and linting"
-version = "0.1.0"
+author = "tomlin7"
+description = "Tailwind CSS utility class intelligence, autocompletion provider, and hex color highlighter"
+version = "0.2.0"
+
+[tailwind_css.dependencies]
+python = []
+tools = ["node"]
 
 [thunder_client]
 submodule = "thunder_client"
 name = "Thunder Client"
-author = "biscuit-extensions"
-description = "Lightweight GUI REST API client with request runner and collections"
-version = "0.1.0"
+author = "tomlin7"
+description = "Lightweight REST API client, HTTP request builder, and response body inspector"
+version = "0.2.0"
+
+[thunder_client.dependencies]
+python = ["requests>=2.31.0", "urllib3"]
+tools = []
 
 [live_sass]
 submodule = "live_sass"
 name = "Live Sass Compiler"
-author = "biscuit-extensions"
-description = "Compile Sass and SCSS files to CSS with live reload and sourcemap support"
-version = "0.1.0"
+author = "tomlin7"
+description = "Sass and SCSS compilation to CSS with auto-watch on save and source map generation"
+version = "0.2.0"
+
+[live_sass.dependencies]
+python = ["libsass>=0.23.0"]
+tools = ["sass", "node"]
 
 [drawio]
 submodule = "drawio"
-name = "Draw.io Integration"
-author = "biscuit-extensions"
-description = "Interactive diagram and flowchart designer directly inside Biscuit"
-version = "0.1.0"
+name = "Draw.io"
+author = "tomlin7"
+description = "Diagram XML model generator, diagram renderer, and embedded flowchart builder"
+version = "0.2.0"
+
+[drawio.dependencies]
+python = ["defusedxml>=0.7.1"]
+tools = []
 
 [go]
 submodule = "go"
 name = "Go"
-author = "biscuit-extensions"
-description = "Rich Go language support, test runner, formatting, and build tools"
-version = "0.1.0"
+author = "tomlin7"
+description = "Go package discovery, go test & go run execution runner, and gopls LSP integration"
+version = "0.2.0"
+
+[go.dependencies]
+python = []
+tools = ["go", "gopls"]
 
 [csharp]
 submodule = "csharp"
 name = "C#"
-author = "biscuit-extensions"
-description = "C# language support, .NET build runner, and solution management"
-version = "0.1.0"
+author = "tomlin7"
+description = ".NET solution and project discovery, dotnet build and test runner, and C# intelligence"
+version = "0.2.0"
+
+[csharp.dependencies]
+python = ["defusedxml>=0.7.1"]
+tools = ["dotnet"]
 
 [github_pull_requests]
 submodule = "github_pull_requests"
 name = "GitHub Pull Requests"
-author = "biscuit-extensions"
+author = "tomlin7"
 description = "Review and manage GitHub pull requests and issues within Biscuit"
-version = "0.1.0"
+version = "0.2.0"
+
+[github_pull_requests.dependencies]
+python = ["requests>=2.31.0"]
+tools = ["gh", "git"]
+
